@@ -10,7 +10,7 @@ body {
     color: #333;
     scroll-behavior: smooth;
 }
-container {
+.container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
@@ -39,7 +39,9 @@ nav a {
 }
     nav a:hover {color: #1abc9c;}
     .hero {
-        background: -moz-linear-gradient(to right, #1abc9c, #16a085);
+        background: -webkit-linear-gradient (to right, #1abc9c, #16a085);
+        background: - moz-linear-gradient (to right, #1abc9c, #16a085);
+        background: linear-gradient (to right, #1abc9c, #16a085);
         color: white;
         padding: 60px 0;
         text-align: center;
@@ -57,7 +59,7 @@ nav a {
         text-decoration: none;
         font-weight: bold;
         border-radius: 25px;
-        transition: background 0.3 ease, transform 0.2s;
+        transition: background 0.3s ease, transform 0.2s;
 
     }
     .btn:hover {
@@ -123,7 +125,7 @@ nav a {
         }
         @media (max-width: 768px) {
             .cards {
-                -ms-flex-direction: column;
+                flex-direction: column;
             }
             .hero h2 {
                 font-size: 2rem;
